@@ -1,6 +1,6 @@
 ---
 import Navbar from "../components/Navbar.astro"
-import Hero from "../components/Hero.astro"
+import Hero from "../components/Hero.html"
 ---
 
 <html lang="es">
@@ -15,6 +15,6 @@ import Hero from "../components/Hero.astro"
 	</head>
 	<body class="max-w-screen-2xl h-screen mx-auto">
 		<Navbar/>
-		<Hero/>
+		<Hero client:load />
 	</body>
 </html>
