@@ -1,5 +1,6 @@
 ---
-import Construction from "../components/Construction.astro";
+import Navbar from "../components/Navbar.astro"
+import Hero from "../components/Hero.astro"
 ---
 
 <html lang="es">
@@ -9,8 +10,11 @@ import Construction from "../components/Construction.astro";
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Safer Journeys</title>
+		<script src="../../node_modules/preline/dist/preline.js"></script>
+        <script defer src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"></script>
 	</head>
-	<body class="max-w-screen-2xl h-screen mx-auto flex justify-center items-center">
-		<Construction/>
+	<body class="max-w-screen-2xl h-screen mx-auto">
+		<Navbar/>
+		<Hero/>
 	</body>
 </html>
