@@ -1,9 +1,10 @@
 ---
 import Navbar from "../components/Navbar.astro"
-import Hero from "../components/Hero.html"
+import Hero from "../components/Hero.astro"
+import About from "../components/About.astro"
 ---
 
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -15,6 +16,7 @@ import Hero from "../components/Hero.html"
 	</head>
 	<body class="max-w-screen-2xl h-screen mx-auto">
 		<Navbar/>
-		<Hero client:load />
+		<Hero/>
+		<About/>
 	</body>
 </html>
