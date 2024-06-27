@@ -1,0 +1,18 @@
+---
+import { Image } from "astro:assets";
+import Product from "./product.astro";
+import producto2 from "../../public/img/producto2.jpeg";
+import producto1 from "../../public/img/producto1.jpeg";
+import producto3 from "../../public/img/producto3.jpeg";
+---
+
+<section class="pt-10">
+    <h2 class="text-4xl font-semibold text-center mb-4 text-safer-800 lg:text-7xl">Nuestros Servicios</h2>
+    <div
+        class="mx-auto grid max-w-full grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3 lg:py-6 lg:px-4"
+    >
+    <Product title="Servicio empresarial" img={producto1} alt="Producto1" text1="Manejo de horario." text2="Mejora en la calidad de vida" text3="Identidad empresarial" text4="Retención del talento" msjWhatsApp="https://wa.me/524462136447?text=Necesito%20informaci%C3%B3n%20sobre%20su%20servicio%20en%20compostaje"/>
+    <Product title="Servicio de Turismo" img={producto2} alt="Producto2" text1="Confort y economía" text2="Evitar cargos extra" text3="Administrar un itinerario completo" text4="Responsabilidad y seguridad." msjWhatsApp="https://wa.me/524462136447?text=Necesito%20informaci%C3%B3n%20sobre%20su%20servicio%20en%20Biodigestores"/>
+    <Product title="Servicio Particular" img={producto3} alt="Producto3" text1="Libertad y comodidad" text2="Flexibilidad de horarios" text3="Soporte y asistencia" text4="Privacidad" msjWhatsApp="https://wa.me/524462136447?text=Necesito%20informaci%C3%B3n%20sobre%20su%20servicio%20en%20Dise%C3%B1o%20y%20construcci%C3%B3n%20de%20biodigestores%20a%20medida"/>
+    </div>
+</section>
