@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import producto1 from "../../public/img/collage1.png";
 import producto2 from "../../public/img/collage2.png";
 import producto3 from "../../public/img/collage3.png";
+import ctg from "../../public/img/ctg.pdf";
 ---
 
 <section id="promotions" class="scroll-mt-16 lg:p-4 lg:grid lg:grid-cols-3">
@@ -128,6 +129,6 @@ import producto3 from "../../public/img/collage3.png";
                 <li>Unidades aseguradas</li>
             </ul>
         </div>
-        <a href="../../public/img/ctg.pdf" download="catálogo.pdf" class="bg-safer-200 text-safer-950 w-60 rounded-2xl h-12 flex justify-center items-center shadow-lg hover:shadow-xl hover:bg-safer-100 hover:transform hover:scale-105 duration-300 active:bg-safer-600">Descargar El Catálogo</a>
+        <a href={ctg} download="safer.pdf" class="bg-safer-200 text-safer-950 w-60 rounded-2xl h-12 flex justify-center items-center shadow-lg hover:shadow-xl hover:bg-safer-100 hover:transform hover:scale-105 duration-300 active:bg-safer-600">Descargar El Catálogo</a>
     </article>
 </section>
