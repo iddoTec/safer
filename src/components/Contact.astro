@@ -1,0 +1,78 @@
+---
+import { Image } from "astro:assets";
+import contact from "../../public/img/contact.png";
+import whatsapp from "../../public/img/whatsapp.png"
+import face from "../../public/img/facebook.png"
+import mail from "../../public/img/mail.png"
+---
+
+<article id="contact" class=" hidden scroll-mt-20 relative mt-6 lg:px-4 contact:flex justify-center">
+    <Image
+        class="object-cover object-top w-full lg:rounded-3xl"
+        src={contact}
+        alt="contact"
+    />
+    <section
+        class="absolute h-[18rem] w-[32rem]  lg:h-[23rem] lg:w-[42rem] top-96 lg:top-10% text-white"
+    >
+    <div class="w-full h-full bg-black opacity-50 absolute flex z-10 rounded-3xl"></div>
+    <div class="flex flex-col justify-center items-center absolute w-full h-full z-20">
+        <h4 class="text-xl font-bold mb-10 lg:mb-20 lg:text-3xl">Contáctanos</h4>
+        <div class="my-2 flex items-center gap-4">
+            <Image
+            class="w-6 h-auto lg:w-8"
+            src={whatsapp}
+            alt="contact"
+            />
+            <p class="text-base font-semibold lg:text-xl">352-313-5032</p>
+        </div>
+        <div class="my-3 flex items-center gap-4">
+            <Image
+            class="w-6 h-auto lg:w-8"
+            src={face}
+            alt="contact"
+            />
+            <p class="text-base font-semibold lg:text-xl">Safer Journeys</p>
+        </div>
+        <div class="my-3 flex items-center gap-4">
+            <Image
+            class="w-6 h-auto lg:w-8"
+            src={mail}
+            alt="contact"
+            />
+            <p class="text-base font-semibold lg:text-xl">atencionacliente@saferjourneys.com.mx</p>
+        </div>
+    </div>
+    </section>
+</article>
+
+<article id="contact2" class="p-4 mt-10 pb-5 lg:py-10 lg:m-4 contact:hidden">
+    <div class="flex flex-col justify-center items-center w-full h-full">
+        <h4 class="text-xl font-bold mb-10 lg:mb-20 lg:text-3xl">Contáctanos</h4>
+        <div class="my-2 flex items-center gap-4">
+            <Image
+            class="w-6 h-auto lg:w-8"
+            src={whatsapp}
+            alt="contact"
+            />
+            <p class="text-base font-semibold lg:text-xl">352-313-5032</p>
+        </div>
+        <div class="my-3 flex items-center gap-4">
+            <Image
+            class="w-6 h-auto lg:w-8"
+            src={face}
+            alt="contact"
+            />
+            <p class="text-base font-semibold lg:text-xl">Safer Journeys</p>
+        </div>
+        <div class="my-3 flex items-center gap-4">
+            <Image
+            class="w-6 h-auto lg:w-8"
+            src={mail}
+            alt="contact"
+            />
+            <p class="text-sm font-semibold lg:text-xl">atencionacliente@saferjourneys.com.mx</p>
+        </div>
+    </div>
+</article>
+

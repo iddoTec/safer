@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 export default {
     content: [
         "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
@@ -21,6 +24,10 @@ export default {
                     950: "#42100d",
                 },
             },
+        },
+        screens: {
+            'contact': '1400px',
+            ...defaultTheme.screens,
         },
     },
     plugins: [require("preline/plugin"), require("tailwindcss-animated")],

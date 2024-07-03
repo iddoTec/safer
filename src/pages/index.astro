@@ -4,6 +4,8 @@ import Hero from "../components/Hero.astro"
 import About from "../components/About.astro"
 import Services from "../components/Services.astro"
 import Units from "../components/Units.astro"
+import Contact from "../components/Contact.astro"
+import Footer from "../components/Footer.astro"
 ---
 
 <html lang="es" class="scroll-smooth">
@@ -16,11 +18,13 @@ import Units from "../components/Units.astro"
 		<script src="../../node_modules/preline/dist/preline.js"></script>
         <script defer src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"></script>
 	</head>
-	<body class="max-w-screen-2xl h-screen mx-auto">
+	<body class="max-w-screen-2xl h-auto mx-auto">
 		<Navbar/>
 		<Hero/>
 		<About/>
 		<Services/>
 		<Units/>
+		<Contact/>
+		<Footer/>
 	</body>
 </html>
