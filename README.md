@@ -1,4 +1,4 @@
-# IddO Tec Website
+# Safer Journeys Website
 
 ![Safer Journeys Logo](./public/img/logoFull.png)
 
