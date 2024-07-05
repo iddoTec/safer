@@ -1,30 +1,45 @@
 ---
-import Navbar from "../components/Navbar.astro"
-import Hero from "../components/Hero.astro"
-import About from "../components/About.astro"
-import Services from "../components/Services.astro"
-import Units from "../components/Units.astro"
-import Contact from "../components/Contact.astro"
-import Footer from "../components/Footer.astro"
+import Navbar from "../components/Navbar.astro";
+import Hero from "../components/Hero.astro";
+import About from "../components/About.astro";
+import Services from "../components/Services.astro";
+import Units from "../components/Units.astro";
+import Contact from "../components/Contact.astro";
+import Footer from "../components/Footer.astro";
 ---
 
+<!-- desarrollado por RobertCoder (www.robertcoder.com) --><!-- IddO Tec 2024 (www.iddotec.com) -->
 <html lang="es" class="scroll-smooth">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Safer Journeys</title>
-		<script src="../../node_modules/preline/dist/preline.js"></script>
-        <script defer src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"></script>
-	</head>
-	<body class="max-w-screen-2xl h-auto mx-auto">
-		<Navbar/>
-		<Hero/>
-		<About/>
-		<Services/>
-		<Units/>
-		<Contact/>
-		<Footer/>
-	</body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Safer Journeys" />
+        <meta property="og:url" content="https://www.saferjourneys.com.mx/" />
+        <meta
+            property="og:image"
+            content="http://drive.google.com/uc?export=view&id=10uX4illg9iUKof233uZs2woQ5LLCaDEZ"
+        />
+        <meta
+            property="og:description"
+            content="Revolucionamos el transporte corporativo con soluciones innovadoras, sostenibles y seguras. ¡Descubre una nueva era de movilidad empresarial!"
+        />
+        <title>Safer Journeys</title>
+        <script src="../../node_modules/preline/dist/preline.js"></script>
+        <script
+            defer
+            src="https://unpkg.com/tailwindcss-intersect@1.x.x/dist/observer.min.js"
+        ></script>
+    </head>
+    <body class="max-w-screen-2xl h-auto mx-auto">
+        <Navbar />
+        <Hero />
+        <About />
+        <Services />
+        <Units />
+        <Contact />
+        <Footer />
+    </body>
 </html>
