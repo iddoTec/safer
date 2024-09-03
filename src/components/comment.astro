@@ -74,6 +74,11 @@
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+
+
+        const key = import.meta.env.PUBLIC_KEY;
+        const aut = import.meta.env.PUBLIC_AUT;
+        
         const form = document.getElementById("suggestion-form") as HTMLFormElement;
         const submitBtn = document.getElementById("submit-btn") as HTMLButtonElement;
         const inputs = form.querySelectorAll("input, textarea");
@@ -106,8 +111,8 @@
                 const response = await fetch('https://pbpgulqeverlxooyuwgm.supabase.co/rest/v1/sugerencias', {
                     method: 'POST',
                     headers: {
-                        'apikey': 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBicGd1bHFldmVybHhvb3l1d2dtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ4OTExNzEsImV4cCI6MjA0MDQ2NzE3MX0.56nr_2tMjHEk9wnnU602LVA_01o5G8Hm1Ra4UhPZceM',
-                        'Authorization': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBicGd1bHFldmVybHhvb3l1d2dtIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MjQ4OTExNzEsImV4cCI6MjA0MDQ2NzE3MX0.56nr_2tMjHEk9wnnU602LVA_01o5G8Hm1Ra4UhPZceM',
+                        'apikey': key,
+                        'Authorization': aut,
                         'Content-Type': 'application/json',
                         'Prefer': 'return=minimal'
                     },
